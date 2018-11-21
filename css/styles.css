@@ -1,8 +1,8 @@
 body {
-    background-color: #FFF;
-    font-family: "Segoe UI", Arial;
-    width:100%;
-}
+     background-color: #FFF;
+     font-family: "Segoe UI", Arial;
+     width: 100%;
+ }
 
 ul, li {
     list-style: none;
@@ -19,7 +19,7 @@ a {
     width: 100%;
     top: 0;
     background-color: #E0EBE8;
-    z-index:2;
+    z-index: 2;
 }
 
 .navbar-content {
@@ -58,7 +58,7 @@ a {
 
 
 #projects {
-    min-height:800px;
+    min-height: 800px;
 }
 
 .projects-content {
@@ -74,10 +74,10 @@ a {
 
 
 .projects-title {
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-title h2 {
@@ -86,14 +86,14 @@ a {
 }
 
 .btn {
-    border:2px solid #108080;
-    color:#108080;
-    background-color:#E0EBE8;
-    border-radius:100%;
-    width:125px;
-    height:125px;
-    font-size:16px;
-    font-weight:bold;
+    border: 2px solid #108080;
+    color: #108080;
+    background-color: #E0EBE8;
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    font-weight: bold;
 
 }
 
@@ -102,11 +102,12 @@ a {
 }
 
 #show-all {
-    border-radius:5px;
-    height:50px;
-    width:175px;
-    margin-top:50px;
-    margin-right:0;
+    border-radius: 5px;
+    height: 50px;
+    width: 175px;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -130,40 +131,41 @@ a {
 }
 
 .contact-content {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    flex-wrap:wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card-title {
     border-top: 2px solid #108080;
-    position:relative;
-    bottom:4px;
+    position: relative;
+    bottom: 4px;
 }
 
 #contact {
-    background-color:#C8F7C5;
-    min-height:700px;
+    background-color: #C8F7C5;
+    min-height: 700px;
 }
 
 .contact-title {
-    width:100%;
-    display:flex;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    align-items:center;
-    position:relative;
-    top:200px;
+    align-items: center;
+    position: relative;
+    top: 200px;
 }
 
 .contact-button-container {
-    position:relative;
-    top:300px;
+    position: relative;
+    top: 300px;
 }
 
 .contact-button-container .btn {
-    margin:0 35px 0 35px;
+    margin: 0 35px 0 35px;
 }
+
 #navbar ul {
     display: flex;
     flex-direction: row;
@@ -175,7 +177,7 @@ a {
 
 #main-section {
     margin-top: 60px;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 .full-height {
@@ -183,39 +185,39 @@ a {
 }
 
 #projects img {
-   height:180px;
-    width:100%;
+    height: 180px;
+    width: 100%;
 }
 
 
 .projects-links {
     display: grid;
-    align-self:center;
-    justify-self:center;
-    align-items:center;
-    justify-items:center;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: auto auto auto;
     grid-template-areas: "row1-col1 row1-col2 row1-col3" "row2-col1 row2-col2 row2-col3";
-    grid-gap:100px
+    grid-gap: 100px
 }
 
 .projects-footer {
-    width:100%;
+    width: 100%;
     display: flex;
-    align-content:center;
-    justify-content:center;
+    align-content: center;
+    justify-content: center;
 }
 
 #footer {
-    background-color:#22313F;
-    height:100px;
+    background-color: #22313F;
+    height: 100px;
 }
 
 .footer-content p {
-    margin-top:0;
-    color:white;
-    text-align:center;
-    line-height:50px;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    line-height: 50px;
 }
 
 #tribute-page {
@@ -240,4 +242,53 @@ a {
 
 #tic-tac-toe {
     grid-area: row2-col3;
+}
+
+
+@media only screen and (max-width: 1215px) {
+    .projects-links {
+        grid-template-columns: auto auto;
+        grid-template-areas: "row1-col1 row1-col2" "row2-col1 row2-col2" "row3-col1 row3-col2";
+    }
+
+    #tribute-page {
+        grid-area: row1-col1;
+    }
+
+    #random-quote-machine {
+        grid-area: row1-col2;
+    }
+
+    #javascript-calculator {
+        grid-area: row2-col1;
+    }
+
+    #map-data {
+        grid-area: row2-col2;
+    }
+
+    #wikipedia-viewer {
+        grid-area: row3-col1;
+    }
+
+    #tic-tac-toe {
+        grid-area: row3-col2;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .projects-links {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-content:space-between;
+    }
+
+    .projects-links .card-container {
+        margin-bottom:50px;
+    }
+
+    .btn-round {
+        margin-bottom:50px;
+    }
 }
