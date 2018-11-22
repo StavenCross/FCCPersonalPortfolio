@@ -250,7 +250,12 @@ a {
         grid-template-columns: auto auto;
         grid-template-areas: "row1-col1 row1-col2" "row2-col1 row2-col2" "row3-col1 row3-col2";
     }
-
+    .contact-button-container .btn {
+        margin-bottom:35px;
+    }
+    #contact {
+        min-height:900px;
+    }
     #tribute-page {
         grid-area: row1-col1;
     }
@@ -284,11 +289,19 @@ a {
         align-content:space-between;
     }
 
+    .contact-content {
+        width:100%;
+    }
+
+    .contact-button-container {
+        min-width:480px;
+        left:100px;
+    }
     .projects-links .card-container {
         margin-bottom:50px;
     }
 
-    .btn-round {
-        margin-bottom:50px;
-    }
+
+
+
 }
